@@ -81,7 +81,8 @@ func buildDefaultInlineKeyboardMarkup(bot *tgbotapi.BotAPI) *tgbotapi.InlineKeyb
 		tgbotapi.NewInlineKeyboardRow(
 			tgbotapi.NewInlineKeyboardButtonData("👨🏻‍💼我加入的群", enums.CallbackJoinedGroup.Value),
 			tgbotapi.NewInlineKeyboardButtonData("👮🏻‍♂️我管理的群", enums.CallbackAdminGroup.Value)),
-		
+		tgbotapi.NewInlineKeyboardRow(
+			tgbotapi.NewInlineKeyboardButtonURL("🌟联系作者", "https://t.me/jishu666")),
 	)
 	return &newInlineKeyboardMarkup
 }
